@@ -15,7 +15,7 @@ def fetch_image(url):
 
 # Load environment variables
 load_dotenv()
-cohere_api_key = os.getenv("COHERE_API_KEY")
+cohere_api_key = st.secrets["COHERE_API_KEY"]
 co = cohere.Client(cohere_api_key)
 
 # Set page config
